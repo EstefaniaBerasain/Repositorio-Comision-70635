@@ -1,0 +1,300 @@
+/*-----------------------------CONTENIDO GENERAL---------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(rgb(208, 154, 224), rgba(248, 229, 237, 0.932));
+  margin: 0;
+  padding: 0;
+  color: rgb(104, 66, 112);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+a:hover {
+  background-color: rgb(238, 230, 237);
+  color: rgb(59, 16, 68);
+  box-shadow: 1px 1px 1px 1px;
+}
+
+/*
+header
+{
+    background-color: var(--secondary-color);
+    color: rgb(11, 31, 22);
+    text-align: center;
+    padding: 20pX;
+    height: 20%;
+    width: 100%;
+    border: 2px solid rgb(237, 199, 247);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.nav
+{
+    height: 20%;
+    background-color: var(--fourth-color);
+    letter-spacing: 2px;
+    text-indent: 10px;
+    width: 100%;
+}
+
+.nav ul
+{
+    list-style: none;
+    padding: 50px;
+    justify-content:flex-end;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.ICON
+{
+    float: left;
+    margin-top: 20px;
+}
+*/
+.navbar {
+  height: 20%;
+  background-color: rgb(210, 152, 221);
+  letter-spacing: 2px;
+  text-indent: 10px;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+}
+
+.footer {
+  height: 10%;
+  background-color: rgb(201, 176, 211);
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconofooter {
+  animation-name: iconos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+}
+
+@keyframes iconos {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*----------------------FIN DE CONTENIDO GENERAL--------------------------*/
+/* --------------------- PARTICULARIDADES DEL INDEX -----------------------------------*/
+h1 {
+  text-align: center;
+  padding: 30px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.main {
+  /*---------------Flexbox - Contenedor-------------*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50%;
+}
+
+.imag {
+  display: flex;
+  padding: 20px 30px 20px 30px;
+  border: solid white;
+  flex-wrap: wrap;
+}
+
+.imag1:hover {
+  background-color: rgb(238, 230, 237);
+  color: var(--third-color-texto);
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.imag1 {
+  height: 360px;
+  width: 360px;
+}
+
+.section {
+  text-align: justify;
+  padding: 30px 20px 30px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+@media (max-width: 768px) {
+  .ICON {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 20px;
+    flex-wrap: nowrap;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .section {
+    text-align: justify;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .imag {
+    flex-direction: column;
+    width: 90%;
+  }
+  .imag1 {
+    flex-direction: column;
+  }
+}
+/* --------------------- FIN PARTICULARIDADES DEL INDEX -----------------------------------*/
+/*--------------------------- INICIO PAGINA DE BARILOCHE------------------------------*/
+.puertoblest {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pb {
+  width: 200px;
+  height: 250px;
+  border: solid rgb(255, 255, 255);
+}
+
+.cerrotronador {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ct {
+  width: 200px;
+  height: 250px;
+  border: solid rgb(255, 255, 255);
+}
+
+.txt {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  padding: 30px;
+}
+
+@media (max-width: 480px) {
+  .puertoblest {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .cerrotronador {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .pb {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .ct {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+/* --------------------- PAGINA NOSOTROS --------------------------------------------------*/
+.contenedor {
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 10%;
+}
+
+.imagendiv {
+  width: 500px;
+  margin-top: 1%;
+  border: solid rgb(255, 255, 255);
+  margin: 1%;
+}
+
+.historia {
+  display: flex;
+  margin-top: 1%;
+  margin: 3%;
+  color: rgb(104, 66, 112);
+  letter-spacing: 1px;
+  font-size: medium;
+  line-height: 35px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .imagendiv {
+    width: 90%;
+    margin: auto;
+  }
+}
+/*----------------FIN PAGINA NOSOTROS-----------------*/
+/*----------------PAGINA DE CONTACTO------------------*/
+form {
+  width: 40%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  margin-bottom: 20%;
+  margin-left: 30%;
+  border-radius: 3px;
+  outline: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 250px;
+    height: 250px;
+    border: 0px solid black;
+  }
+}
+/*--------------------------- FIN DE PAGINA DE CONTACTO-------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
